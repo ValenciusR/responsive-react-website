@@ -13,6 +13,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Pagination } from "swiper/modules";
+import FaqComponent from "../components/FaqComponent";
 
 function Homepage() {
   let navigate = useNavigate();
@@ -147,6 +148,7 @@ function Homepage() {
           </Row>
         </Container>
       </div>
+      <FaqComponent></FaqComponent>
     </div>
   );
 }
