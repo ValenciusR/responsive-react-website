@@ -40,6 +40,9 @@ function FooterComponent() {
               <input type="text" placeholder="Subscribe..."></input>
               <Button>Subscribe</Button>
             </div>
+            <div className="social">
+              <i className="fa-brands fa-facebook"></i>
+            </div>
           </Col>
         </Row>
       </Container>
