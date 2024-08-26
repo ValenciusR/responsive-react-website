@@ -6,8 +6,8 @@ function FooterComponent() {
   return (
     <div className="footer py-5">
       <Container>
-        <Row>
-          <Col>
+        <Row className="d-flex justify-content-between">
+          <Col lg="5">
             <h3 className="fw-bold">Ngoding.In</h3>
             <p className="desc">
               Ad fugiat proident id velit adipisicing excepteur ullamco nulla
@@ -26,7 +26,7 @@ function FooterComponent() {
               </Link>
             </div>
           </Col>
-          <Col className="d-flex flex-column col-lg-2 col">
+          <Col className="d-flex flex-column col-lg-2 col mt-lg-0 mt-5">
             <h5 className="fw-bold">Menu</h5>
             <Link to="">Home</Link>
             <Link to="kelas">Kelas</Link>
@@ -34,15 +34,28 @@ function FooterComponent() {
             <Link to="faq">FAQ</Link>
             <Link to="syaratketentuan">Syarat & Ketentuan</Link>
           </Col>
-          <Col>
-            <h5>Subscribe Untuk Info Menarik!</h5>
+          <Col lg="4" className="mt-lg-0 mt-5">
+            <h5 className="fw-bold mb-3">Subscribe Untuk Info Menarik!</h5>
             <div className="subscribes">
               <input type="text" placeholder="Subscribe..."></input>
-              <Button>Subscribe</Button>
+              <button className="btn btn-danger rounded-end rounded-0">
+                Subscribe
+              </button>
             </div>
-            <div className="social">
+            <div className="social mt-3">
               <i className="fa-brands fa-facebook"></i>
+              <i className="fa-brands fa-twitter"></i>
+              <i className="fa-brands fa-linkedin"></i>
+              <i className="fa-brands fa-youtube"></i>
             </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <p className="text-center px-md-0 px-3">
+              &copy; Copyright {new Date().getFullYear()} by{" "}
+              <span className="fw-bold">Ngoding.In</span> , All Right Reserved
+            </p>
           </Col>
         </Row>
       </Container>

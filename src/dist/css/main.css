@@ -22,6 +22,8 @@
     -ms-transition: all .2s ease;
     -o-transition: all .2s ease;
     z-index: 999;
+    animation-name: fadeInDown;
+    animation-duration: 1s;
 }
 
 .navbar.color-active{
@@ -60,6 +62,7 @@ header {
     font-size: 3.2rem;
     font-weight: 500;
     color: var(--color-text);
+    --animate-delay: 0.6s;
 }
 
 .homepage .header-box h1 span{
@@ -70,6 +73,11 @@ header {
     line-height: 2;
     color: var(--color-text);
     font-weight: 500;
+    --animate-delay: 1s;
+}
+
+.homepage .header-box button{
+    --animate-delay: 1.4s;
 }
 
 .homepage .header-box img{
@@ -156,7 +164,7 @@ header {
     color: gold;
 }
 
-.hoepage .kelas .row:nth-child(2) h5{
+.homepage .kelas .row:nth-child(2) h5{
     color: var(--color-text);
     font-weight: bold;
     line-height: 1.5;
@@ -253,6 +261,145 @@ header {
     }
 }
 
+.kelas-page .kelas{
+    background-color: var(--primary-color);
+    padding-bottom: 100px;
+}
+
+.kelas-page .kelas .row:nth-child(1){
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.kelas-page .kelas .row:nth-child(1) h1{
+    color: var(--color-text);
+    --animate-delay: 0.5s;
+}
+
+.kelas-page .kelas .row:nth-child(1) p{
+    color: var(--color-text);
+}
+
+.kelas-page .kelas{
+    background-color: var(--primary-color);
+    padding-bottom: 50px;
+}
+.kelas-page .kelas .row:nth-child(1){
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.kelas-page .kelas .row:nth-child(1) h1{
+    color: var(--color-text);
+}
+.kelas-page .kelas .row:nth-child(1) p{
+    color: var(--color-text);
+}
+
+.kelas-page .kelas .row:nth-child(2){
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    padding-inline: 10px;
+    gap: 15px;
+}
+
+.kelas-page .kelas .row:nth-child(2) .col{
+    background-color: white;
+    padding: 0;
+}
+  
+
+.kelas-page .kelas .row:nth-child(2) img{
+    width: 100%;
+    height: 250px;
+}
+
+.kelas-page .kelas .row:nth-child(2) .star i {
+    color: gold;
+}
+
+.kelas-page .kelas .row:nth-child(2) h5{
+    color: var(--color-text);
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.testimonial-page .testimonial{
+    background-color: var(--primary-color);
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.testimonial-page .testimonial .row:nth-child(1){
+    padding-bottom: 50px;
+}
+
+.testimonial-page .testimonial .row:nth-child(1) h1{
+    color:var(--color-text);
+    --animate-delay:.5s;
+}
+
+.testimonial-page .testimonial .row:nth-child(1) p{
+    color:var(--color-text)
+}
+
+.testimonial-page .testimonial .desc{
+    color: var(--color-text);
+    font-weight: 500;
+    line-height: 2;
+    margin-bottom: 50px;
+}
+  
+.testimonial-page .testimonial img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonial-page .testimonial .people{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    column-gap: 10px;
+}
+
+.testimonial-page .testimonial .people h5,
+.testimonial-page .testimonial .people p {
+    color: var(--color-text);
+}
+
+.testimonial-page .testimonial .people h5{
+    font-weight: 600;
+}
+
+.testimonial-page .testimonial .people p{
+    opacity: 50%;
+    text-align: left;
+}
+
+.testimonial-page .testimonial .people img{
+    width: 80px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.syarat-ketentuan-page .syarat-ketentuan{
+    padding-top: 150px;
+    background-color: var(--primary-color);
+}
+
+.syarat-ketentuan-page .syarat-ketentuan h1{
+    --animate-delay:.5s;
+}
+
+.syarat-ketentuan-page .syarat-ketentuan p{
+    line-height: 2;
+}
+
 .faq{
     padding-top: 50px;
     padding-bottom: 50px;
@@ -261,6 +408,7 @@ header {
 
 .faq h2{
     color: var(--color-text);
+    --animate-delay:.5s;
 }
 
 .faq .accordion .accordion-button{
@@ -314,6 +462,43 @@ header {
     text-decoration: none;
     font-size: 14px;
 }
+
 .footer .row:nth-child(1) .col:nth-child(2) a:hover{
     color: var(--secondary-color);
+}
+
+.footer .subscribes{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.footer .subscribes input{
+    width: 200px;
+    height: 38px;
+    padding: 5px;
+}
+
+.footer .social{
+    align-items: center;
+    display: flex;
+    gap:10px;
+}
+
+.footer .social i{
+    cursor: pointer;
+    font-size: 24px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.footer .social i:hover{
+    color: var(--secondary-color);
+}
+
+.footer .row:nth-child(2){
+    margin-top: 100px;
 }
